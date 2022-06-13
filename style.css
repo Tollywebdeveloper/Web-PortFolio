@@ -19,7 +19,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding-top: 45px;
-    padding-left: 8%;
+    padding-left: 2%;
     padding-right: 8%;
 }
 .logo {
@@ -31,6 +31,11 @@ nav {
 span {
     color: crimson;
 }
+#fa-edit {
+    display: none;
+    height: 40px;
+    width: 30px;
+}
 nav ul li {
     list-style-type: none;
     display: inline-block;
@@ -38,6 +43,7 @@ nav ul li {
 }
 nav ul li a {
     color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
     font-size: 4vmin;
     font-weight: bold;
@@ -58,8 +64,10 @@ nav ul li a:hover {
     transform: transform .4s;
 }
 .btn:hover {
-    transform: scale(1.5,1);
+    transform: scale(1,1) translateY(10px) ;
     transition: .4s;
+    background-color: black;
+    border: 2px solid crimson;
 }
 .content {
     position: absolute;
@@ -79,6 +87,7 @@ h3 {
 }
 h4 {
     color: #fcfc;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 2px;
     font-size: 20px;
 }
@@ -201,7 +210,14 @@ together from the same family */
 
 #fa-edit {
     font-size: 50px;
-    display: block;
+    display: none;
+    text-align: center;
+    margin: 25px auto;
+
+    color: crimson;
+}
+#faa-edit {
+    font-size: 50px;
     text-align: center;
     margin: 25px auto;
 
@@ -319,93 +335,101 @@ footer p:nth-child(1) {
 
 
 /*MEDIA QUERIES */
-@media only screen and (max-width:850px) {
-    .nav-links {
-        display:flex;
-        flex-direction: column;
-        margin-top: -500px;
+@media (max-width:1220px) {
+    .hero {
         width: 100%;
-        height: 15vh;
-        justify-content: center;
-        transition: all 2s ease;
     }
-    .menu-btn {
-        display: block;
+    .hero #fa-edit {
+    display: initial;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    color: crimson;
+    top: 20px;
     }
-    .mobile-menu {
-        margin-top: -35px;
-        border-bottom-right-radius: 70%;
-        border:1px solid crimson
+    .hero .nav-links  {
+    display: flex;
+    flex-direction: column;
     }
-    .card {
-    height: auto;
-    width: 335px;
-    padding: 20px 35px;
-    background: #191919;
-    border-radius: 20px;
-    margin: 15px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
+    nav ul {
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #2b2640;
+        transition: .3s;
+     }
+}
+@media (max-width:1039) {
+    .contact-me p {
+        font-size: 12px;
     }
+}
+
+@media (max-width:900px) {
     .about {
         width: 100%;
-        padding: 100px 0px;
-        background: #191919;
     }
-    .about img {
-        height: auto;
-        width: 360px;
-    }
-    .about-text {
-        width: 450px;
-    }
-    .main {
-        width: 1130px;
-        max-width: 95%;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+    .contact-me p {
+        font-size: 25px;
     }
     .about-text h2 {
-        color: white;
-        font-size: 70px;
-        margin-left: 10px;
-        text-transform: capitalize;
-        margin-bottom: 20px;
-        
+        font-size: 10vmin;
+        padding-left: 20px;
     }
-    
     .about-text h5 {
-        color: white;
-        margin-left: 10px;
-        font-size: 24px;
-        margin-bottom: 25px;
-        text-transform: capitalize;
+        font-size: 6vmin;
+        padding-left: 30px;
     }
     .about-text p {
-        color: #fcfc;
-        letter-spacing: 1px;
-        line-height: 28px;
         font-size: 18px;
-        margin-left: 15px;
-        margin-bottom: 45px;
+        text-align: center;
     }
     .about-text button {
-        background-color: crimson;
-        color: white;
-        text-decoration: none;
-        border: 2px solid transparent;
-        margin-left: 10px;
-        font-weight: bold;
-        padding: 13px 30px;
-        border-radius: 30px;
-        transition: .4s;
+        margin-left: 40px;
     }
-    .about-text button:hover {
-        background-color: transparent;
-        border: 2px solid #f9004f;
-        cursor: pointer;
+    footer p {
+        font-size: 22px;
+    }
+    .card {
+        height: auto;
+    }
+}
+@media (max-width:800px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    footer p {
+        font-size: 10px;
+    }
+    .main {
+        display: flex;
+        
+        flex-direction: column-reverse;
+    }
+    .about img {
+        padding-top: 20px;
+    }
+    .about-text button {
+        margin-left: 230px;
+    }
+    .about-text p {
+        font-size: 4vmin;
+    }
+}
+@media (max-width:860px) {
+    .content h1 {
+        font-size: 50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}
+@media (max-width:500px) {
+    .hero h2 {
+        
     }
 }
