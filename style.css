@@ -427,9 +427,87 @@ footer p:nth-child(1) {
         font-size: 50px;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
+    .contact-me p {
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .about-text h2 {
+        text-align: center;
+    }
+    .about-text h5 {
+        text-align: center;
+    }
+    .about p {
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 }
 @media (max-width:500px) {
     .hero h2 {
         
+    }
+}
+/*MOBILE VIEW */
+@media (max-width:480px) {
+    .content form {
+        width: 100%;
+        margin: auto;
+    }
+    .newslatter {
+        margin-top: 260px;
+        width: 100%;
+        margin-left: -30px;
+    }
+}
+@media (max-width:360px) {
+    
+    .hero h2 {
+        font-size: 32px;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .content h4 {
+        font-size: 20px;
+        margin-top: -70px;
+        padding-top: 100px;
+    }
+    .content {
+        margin-top: -80px;
+        padding: 10px 10px;
+    }
+    .content h1 {
+        font-size: 30px;
+        width: 100%;
+        margin-top: 0px;
+    }
+    .about-text h2 {
+        text-align: center;
+    }
+    .about-text h5 {
+        text-align: center;
+    }
+    .about p {
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .content h3 {
+        font-size: 20px;
+        margin-top: -20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .content form {
+        width: 100%;
+        position: absolute;
+        top: 150;
+        left: 1px;
+    }
+    .hero #fa-edit {
+        position: absolute;
+        top: -10px;
+        right: 15px
     }
 }
