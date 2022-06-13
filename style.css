@@ -1,0 +1,411 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html {
+    overflow-x: hidden;
+}
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img1.png");
+    background-position: left;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo {
+    color: white;
+    font-size: 10vmin;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span {
+    color: crimson;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 4vmin;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover {
+    color: crimson;
+    transition: .4s;
+}
+.btn {
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transform: transform .4s;
+}
+.btn:hover {
+    transform: scale(1.5,1);
+    transition: .4s;
+}
+.content {
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    transform:  translateY(-50%);
+}
+h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 70px;
+}
+h3 {
+    color:white ;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+h4 {
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.newslatter form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newslatter form  input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid crimson;
+    outline: none;
+    border-radius: 30px;
+}
+/*the :first-child and last child is just to place to things side by side, like they are
+together from the same family */
+.newslatter form  input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: crimson;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+}  
+
+/*About section */
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background: #191919;
+}
+.about img {
+    height: auto;
+    width: 430px;
+}
+.about-text {
+    width: 550px;
+}
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2 {
+    color: white;
+    font-size: 12vmin;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 24px;
+    margin-bottom: 45px;
+}
+.about-text button {
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.about-text button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004f;
+    cursor: pointer;
+}
+
+.service {
+    background-color: #101010;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 10vmin;
+    width: ;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card {
+    height: 375px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+#fa-edit {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px auto;
+
+    color: crimson;
+}
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p {
+    color: #fcfc;
+    font-size: 3vmin;
+    line-height: 27px;
+    margin-bottom: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.card .button {
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transform: transform .4s;
+}
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004f;
+    cursor: pointer;
+    transition: .6s;
+}
+.contact-me {
+    width: 100%;
+    height: 200px;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me  p {
+    color: white;
+    font-size: 6vmin;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 25px;
+}
+.contact-me .button-two {
+    background-color: crimson;
+    font-size: 3vmin;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transform: transform .4s;
+}
+.contact-me .button-two:hover {
+    background-color: transparent;
+    border: 2px solid #f9004f;
+    cursor: pointer;
+    transition: .6s;
+}
+footer {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1) {
+    font-size: 6vmin;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: ;
+}
+.social {
+    display: flex;
+}
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    margin: 22px 10px;
+    background-color: crimson;
+    font-size: 23px;
+}
+.social a:hover {
+    background-color: transparent;
+    border: 2px solid #f9004f;
+    cursor: pointer;
+    transition: .6s;
+}
+.end {
+    position: absolute;
+    bottom: 20px;
+    color: crimson;
+    color: white;
+    font-size: 4vmin;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*MEDIA QUERIES */
+@media only screen and (max-width:850px) {
+    .nav-links {
+        display:flex;
+        flex-direction: column;
+        margin-top: -500px;
+        width: 100%;
+        height: 15vh;
+        justify-content: center;
+        transition: all 2s ease;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .mobile-menu {
+        margin-top: -35px;
+        border-bottom-right-radius: 70%;
+        border:1px solid crimson
+    }
+    .card {
+    height: auto;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    }
+    .about {
+        width: 100%;
+        padding: 100px 0px;
+        background: #191919;
+    }
+    .about img {
+        height: auto;
+        width: 360px;
+    }
+    .about-text {
+        width: 450px;
+    }
+    .main {
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .about-text h2 {
+        color: white;
+        font-size: 70px;
+        margin-left: 10px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        
+    }
+    
+    .about-text h5 {
+        color: white;
+        margin-left: 10px;
+        font-size: 24px;
+        margin-bottom: 25px;
+        text-transform: capitalize;
+    }
+    .about-text p {
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-left: 15px;
+        margin-bottom: 45px;
+    }
+    .about-text button {
+        background-color: crimson;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        margin-left: 10px;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+    }
+    .about-text button:hover {
+        background-color: transparent;
+        border: 2px solid #f9004f;
+        cursor: pointer;
+    }
+}
